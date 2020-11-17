@@ -74,11 +74,27 @@
                      <a class="dropdown-item" href="pricing.php">Pricing Table</a>
                   </div>
                </li>
-               <li class="nav-item">
-                  <a class="nav-link" href="login.php">Iniciar sesión</a>
+               <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBlog" data-toggle="dropdown"
+                     aria-haspopup="true" aria-expanded="false">
+                     Iniciar sesión
+                  </a>
+                  <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
+                     <a class="dropdown-item" href="faq.php">Organizador de eventos</a>
+                     <a class="dropdown-item" href="404.php">Pyme</a>
+                     <a class="dropdown-item" href="login.php">Público</a>
+                  </div>
                </li>
-               <li class="nav-item">
-                  <a class="nav-link" href="registro.php">Registrarse</a>
+               <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBlog" data-toggle="dropdown"
+                     aria-haspopup="true" aria-expanded="false">
+                     Registrarse
+                  </a>
+                  <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
+                     <a class="dropdown-item" href="faq.php">Organizador de eventos</a>
+                     <a class="dropdown-item" href="404.php">Pyme</a>
+                     <a class="dropdown-item" href="registro.php">Público</a>
+                  </div>
                </li>
             </ul>
          </div>
