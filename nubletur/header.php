@@ -36,13 +36,21 @@
          <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto">
                <li class="nav-item">
-                  <a class="nav-link <?php if($variable=='index.php'){echo'active';} ?>" href="index.php">Home</a>
+                  <a class="nav-link <?php if($variable=='index.php'){echo'active';} ?>" href="index.php">Inicio</a>
                </li>
                <li class="nav-item">
-                  <a class="nav-link <?php if($variable=='about.php'){echo'active';} ?>"  href="about.php">About</a>
+                  <a class="nav-link <?php if($variable=='eventos.php'){echo'active';} ?>" href="eventos.php">Eventos</a>
                </li>
-               <li class="nav-item">
-                  <a class="nav-link" href="services.php">Services</a>
+               <li class="nav-item dropdown">
+                  <a class="nav-link <?php if($variable=='caracteristicas.php' || $variable=='linea_de_tiempo..php' || $variable=='guia_del_turista.php'){echo'active';} ?> dropdown-toggle" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown"
+                     aria-haspopup="true" aria-expanded="false">
+                     Sobre Ñuble
+                  </a>
+                  <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
+                     <a class="dropdown-item" href="caracteristicas.php">Caracteristicas</a>
+                     <a class="dropdown-item" href="linea_de_tiempo.php">Linea de tiempo</a>
+                     <a class="dropdown-item" href="guia_del_turista.php">Guia del turista</a>
+                  </div>
                </li>
                <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown"
@@ -79,27 +87,11 @@
                      <a class="dropdown-item" href="pricing.php">Pricing Table</a>
                   </div>
                </li>
-               <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBlog" data-toggle="dropdown"
-                     aria-haspopup="true" aria-expanded="false">
-                     Iniciar sesión
-                  </a>
-                  <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
-                     <a class="dropdown-item" href="faq.php">Organizador de eventos</a>
-                     <a class="dropdown-item" href="404.php">Pyme</a>
-                     <a class="dropdown-item" href="login.php">Público</a>
-                  </div>
+               <li class="nav-item">
+                  <a class="nav-link <?php if($variable=='login.php'){echo'active';} ?>" href="login.php">Iniciar sesión</a>
                </li>
-               <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle <?php if($variable=='registro.php'){echo'active';} ?>" href="#" id="navbarDropdownBlog" data-toggle="dropdown"
-                     aria-haspopup="true" aria-expanded="false">
-                     Registrarse
-                  </a>
-                  <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
-                     <a class="dropdown-item" href="faq.php">Organizador de eventos</a>
-                     <a class="dropdown-item" href="404.php">Pyme</a>
-                     <a class="dropdown-item" href="registro.php">Público</a>
-                  </div>
+               <li class="nav-item">
+                  <a class="nav-link <?php if($variable=='registro.php'){echo'active';} ?>" href="registro.php">Registrarse</a>
                </li>
             </ul>
          </div>
