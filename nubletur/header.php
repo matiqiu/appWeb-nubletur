@@ -1,3 +1,8 @@
+<?php
+   $variable =$_SERVER['PHP_SELF'];
+   $variable=basename($variable);
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,7 +11,7 @@
    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
    <meta name="description" content="">
    <meta name="author" content="">
-   <title>N & LW Lawn Care - Landscaping Bootstrap4 HTML5 Responsive Template </title>
+   <title>Ñubletur </title>
    <!-- Bootstrap core CSS -->
    <link href="css/bootstrap.min.css" rel="stylesheet">
    <!-- Fontawesome CSS -->
@@ -31,10 +36,10 @@
          <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto">
                <li class="nav-item">
-                  <a class="nav-link active" href="index.php">Home</a>
+                  <a class="nav-link <?php if($variable=='index.php'){echo'active';} ?>" href="index.php">Home</a>
                </li>
                <li class="nav-item">
-                  <a class="nav-link" href="about.php">About</a>
+                  <a class="nav-link <?php if($variable=='about.php'){echo'active';} ?>"  href="about.php">About</a>
                </li>
                <li class="nav-item">
                   <a class="nav-link" href="services.php">Services</a>
@@ -86,7 +91,7 @@
                   </div>
                </li>
                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBlog" data-toggle="dropdown"
+                  <a class="nav-link dropdown-toggle <?php if($variable=='registro.php'){echo'active';} ?>" href="#" id="navbarDropdownBlog" data-toggle="dropdown"
                      aria-haspopup="true" aria-expanded="false">
                      Registrarse
                   </a>
