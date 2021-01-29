@@ -21,7 +21,7 @@ $fila2 = $stmt2->fetch(PDO::FETCH_ASSOC);
 $ultimo_evento_mas = $fila2["MAX($ultimo_evento+1)"];
 
 ?>
-<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCeZlPcq4WMn39889TnQ3oT81N6ByBmGD8"></script>
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=CLAVESECRETA"></script>
 <script type="text/javascript">
     function initialize() {
         // Crea objeto de mapa
