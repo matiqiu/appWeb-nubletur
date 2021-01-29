@@ -4,10 +4,10 @@
     error_reporting(E_ALL);
     header('Content-Type: text/html; charset=utf-8');
    
-    define("DB_HOST", "tesisnuble2020.ccb0l5jnabt7.us-east-2.rds.amazonaws.com");
-    define("DB_USER", "admin");
-    define("DB_PASS", "tesis1234");
-    define("DB_NAME", "nubletur");
+    define("DB_HOST", "private");
+    define("DB_USER", "private");
+    define("DB_PASS", "private");
+    define("DB_NAME", "private");
 
     $db_conn;
     function conectar()
